@@ -20,13 +20,12 @@ body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--text);overf
 .hero-content a{color: var(--muted);}
 
 h1{font-family:'Playfair Display',serif;font-size:clamp(3rem,7vw,5rem);letter-spacing:4px}
-.subtitle{margin-top:1.5rem;font-size:.9rem;letter-spacing:3px;color:var(--muted);text-transform:uppercase}
+.subtitle{margin-top:1.5rem;font-size:.9rem;letter-spacing:.2rem;color:var(--muted);text-transform:uppercase;display:grid;grid-template-columns:1fr;gap: 0.5rem;}
 .divider{width:70px;height:1px;background:var(--text);margin:2.5rem auto;opacity:.6}
 
 footer{text-align:center;padding:3rem 2rem;font-size:.85rem;color:var(--muted)}
 
-@media (min-width:900px){.ethique-grid{grid-template-columns:repeat(3,1fr);gap:4.5rem}}
-@media (max-width:900px){.ethique p{max-width: 20rem; margin: auto;}}
+@media (min-width:900px){.subtitle{grid-template-columns:1fr 2em 1fr;gap:0} .subtitle span{margin: 0 0 0 .8rem;}}
 @keyframes fadeIn{from{opacity:0}to{opacity:1}}
 @keyframes reveal{to{opacity:1;transform:translateY(0)}}
 </style>
